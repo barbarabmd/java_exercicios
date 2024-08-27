@@ -1,0 +1,26 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class salario {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("digite as horas trabalhadas: ");
+		double horas = scanner.nextDouble();
+		
+		System.out.print("digite o valor recebido por hora: ");
+		double valor = scanner.nextDouble();
+		
+		double salario = horas * valor;
+		
+		System.out.println("o salario do funcionario e: " + salario);
+
+        scanner.close();
+		
+
+	}
+
+}
