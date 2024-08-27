@@ -1,0 +1,25 @@
+package exercicios;
+
+import javax.swing.JOptionPane;
+
+public class areaCirc {
+
+	public static void main(String[] args) {
+		
+		String ent = JOptionPane.showInputDialog("raio do circulo: ");
+
+		
+		double raio = Double.parseDouble(ent);
+				
+		double pi = 3.14;
+		
+		double area = (raio * raio) * pi;
+		
+		
+		
+		JOptionPane.showMessageDialog(null, "a area do circulo e: " + area);
+
+
+	}
+
+}
