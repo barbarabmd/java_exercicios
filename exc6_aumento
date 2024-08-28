@@ -1,0 +1,19 @@
+package exercicios;
+
+import javax.swing.JOptionPane;
+
+public class aumento {
+
+	public static void main(String[] args) {
+		
+		String salarioString = JOptionPane.showInputDialog("digite o salario atual do funcionario: ");
+        double salarioAntigo = Double.parseDouble(salarioString);
+
+        double aumento = salarioAntigo * 0.15;
+        double salarioReajustado = salarioAntigo + aumento;
+
+        JOptionPane.showMessageDialog(null, String.format("salario antigo: %.2f reais\nSalário reajustado: %.2f reais", salarioAntigo, salarioReajustado));
+
+	}
+
+}
