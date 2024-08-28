@@ -1,0 +1,24 @@
+package exercicios;
+
+import javax.swing.JOptionPane;
+
+public class desconto {
+
+	public static void main(String[] args) {
+		
+		String nomeProduto = JOptionPane.showInputDialog("Digite o nome do produto:");
+
+        String valorProdutoString = JOptionPane.showInputDialog("Digite o valor do produto:");
+        double valorProduto = Double.parseDouble(valorProdutoString);
+
+        String descontoString = JOptionPane.showInputDialog("Digite o percentual de desconto (ex: 10 para 10%):");
+        double percentualDesconto = Double.parseDouble(descontoString);
+
+        double valorDesconto = valorProduto * (percentualDesconto / 100);
+        double valorComDesconto = valorProduto - valorDesconto;
+
+        JOptionPane.showMessageDialog(null, String.format("produto: %s\nvalor original: R$ %.3f\nvalor com desconto: R$ %.3f", nomeProduto, valorProduto, valorComDesconto));
+
+	}
+
+}
