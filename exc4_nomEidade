@@ -1,0 +1,21 @@
+package exercicios;
+
+import javax.swing.JOptionPane;
+
+public class nomEidade {
+
+	public static void main(String[] args) {
+
+		String nome = JOptionPane.showInputDialog("digite seu nome: ");
+
+        String anoNascString = JOptionPane.showInputDialog("digite seu ano de nascimento: ");
+        int anoNasc = Integer.parseInt(anoNascString);
+
+        int anoAtual = 2024;
+
+        int idade = anoAtual - anoNasc;
+
+        JOptionPane.showMessageDialog(null, "voce se chama " + nome + " e possui " + idade + " anos de idade!");
+	}
+
+}
